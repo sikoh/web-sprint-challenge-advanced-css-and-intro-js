@@ -37,7 +37,8 @@ Accessibility means to be developed in a way so everyone can use it regardless o
 Varianles are like containers that store data. Like x, y, and z in math. They hold information and that information can be diferrent and can change.
 
 4. What is the purpose of using functions in code?
-   Functions can be reused. Once a function is defined, we can use it over and over and over again. We can invoke the same function many times in our program, which saves as work.
+
+Functions can be reused. Once a function is defined, we can use it over and over and over again. We can invoke the same function many times in our program, which saves as work.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
