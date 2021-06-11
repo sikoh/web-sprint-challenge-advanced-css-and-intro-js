@@ -234,6 +234,8 @@ function getArtistByIndex(arr, num) {
 }
 console.log(getArtistByIndex(artists, 0));
 
+/* not working, problem with the returning names*/
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use get20s to do the following: 
 1. Receive an array
@@ -242,9 +244,14 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/) {
-  /*Your Code Here*/
+function get20s(arr) {
+  const newCentury = arr.parseInt();
+  if (newCentury >= 1900) newArr.push(artists.name);
+  return newArr;
 }
+get20s(artists);
+
+/* not working, problem with the returnin names*/
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
@@ -255,9 +262,13 @@ function get20s(/*Your Code Here*/) {
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(arr, num) {
+  const goAway = arr.splice(num, 1);
+  return goAway.length;
 }
+console.log(removeArtist(artists));
+
+/* not working, idk why*/
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -288,6 +299,8 @@ function addArtist(art) {
 }
 console.log(addArtist(artists));
 
+/*working*?
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
@@ -301,6 +314,8 @@ function lotsOfArt(arr) {
   return arr;
 }
 console.log(lotsOfArt(artists));
+
+/* not working, problem with pushing name*/
 
 // 🎨🎨 STRETCH 🎨🎨//
 /* 💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪 
@@ -324,7 +339,7 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */) {
+function getHTML(/*Code Here*/) {
   /* Code here */
 }
 
