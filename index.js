@@ -230,7 +230,7 @@ console.log(artists[8].name);
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(arr, num) {
-  return `the artist at ${arr[num]} is ${arr[num].name}`;
+  return `the artist at index ${num} is ${arr[num].name}`;
 }
 console.log(getArtistByIndex(artists, 0));
 
@@ -245,15 +245,11 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(arr) {
-  const newCentury = arr.parseInt();
-  if (newCentury >= 1900) newArr.push(artists.name);
-  return newArr;
-}
-get20s(artists);
 
-/* not working, problem with the returnin names*/
 
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
+  /* not working, problem with the returnin names*/
+
+  /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
  1. Receive an array
  2. Receive a number which is the desired index in the array
@@ -262,15 +258,13 @@ get20s(artists);
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(arr, num) {
-  const goAway = arr.splice(num, 1);
-  return goAway.length;
-}
-console.log(removeArtist(artists));
+  function removeArtist(arr, num) {
+    arr.splice(num, 1);
+    return arr.length;
+  }
+  console.log(removeArtist(artists));
 
-/* not working, idk why*/
-
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
+  /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
 1. Receive an array
 2. Add this object of information to the end of the array
@@ -286,39 +280,39 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(art) {
-  art.push({
-    id: 20,
-    name: "Si Koh",
-    years: "1983 - 6/11",
-    genre: "Web Design",
-    nationality: "Bulgarian",
-    bio: "I am a great programmer. And very soon I will have a job that I love and pays at least 6 figure!",
-  });
-  return art;
-}
-console.log(addArtist(artists));
+  function addArtist(art) {
+    art.push({
+      id: 20,
+      name: "Si Koh",
+      years: "1983 - 6/11",
+      genre: "Web Design",
+      nationality: "Bulgarian",
+      bio: "I am a great programmer. And very soon I will have a job that I love and pays at least 6 figure!",
+    });
+    return art;
+  }
+  console.log(addArtist(artists));
 
-/*working*?
-
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+  /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
 2. Return an array with names of artists in the received array who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(arr) {
-  let paintMore = artists.paintings;
-  if (paintMore >= 100) arr.push(artists.name);
-  return arr;
-}
-console.log(lotsOfArt(artists));
+  function lotsOfArt(arr) {
+    let paintMore = artists.paintings;
+    if (paintMore >= 100) receivedArr.push(arr.name);
+    {
+      return receivedArr;
+    }
+  }
+  console.log(lotsOfArt(artists));
 
-/* not working, problem with pushing name*/
+  /* not working, problem with pushing name*/
 
-// 🎨🎨 STRETCH 🎨🎨//
-/* 💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪 
+  // 🎨🎨 STRETCH 🎨🎨//
+  /* 💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪 
 Programmatically console.log HTML element structure.
 
 In HTML, every artist and associated content uses the following structure: 
@@ -339,31 +333,31 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/*Code Here*/) {
-  /* Code here */
-}
+  function getHTML(/*Code Here*/) {
+    /* Code here */
+  }
 
-/* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
+  /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
 Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */) {
-  /* Code here */
-}
+  function randomize(/* Code here */) {
+    /* Code here */
+  }
 
-/* 💪💪💪💪💪💪 STRETCH 3: 💪💪💪💪💪💪
+  /* 💪💪💪💪💪💪 STRETCH 3: 💪💪💪💪💪💪
  Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
 
-/* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑*/
-function foo() {
-  console.log("its working");
-  return "bar";
-}
-/*Don't touch the code after this line! */
-export default {
-  foo,
-  getArtistByIndex,
-  get20s,
-  removeArtist,
-  addArtist,
-  lotsOfArt,
-};
+  /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑*/
+  function foo() {
+    console.log("its working");
+    return "bar";
+  }
+  /*Don't touch the code after this line! */
+  export default {
+    foo,
+    getArtistByIndex,
+    get20s,
+    removeArtist,
+    addArtist,
+    lotsOfArt,
+  };
